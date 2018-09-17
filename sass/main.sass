@@ -1,0 +1,566 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+/* MY CODE*/
+
+header
+	font-family: 'Open Sans', sans-serif
+	height: 738px
+	width: auto	
+	background-image: url(../img/header/Layer1.png)
+	background-size: cover  //масштабирует изображение под размер блока
+	text-align: center
+	color: #fff
+	.head
+		display: inline-block
+		// width: 100%
+		padding-top: 3%
+		// display: flex
+		// justify-content: row
+		// justify-content: space-between
+		.logo
+			// margin-left: 5%
+		.nav
+			// margin-right: 10%
+			ul
+				width: 100%
+				list-style: none
+				display: block
+				font-family: 'Open Sans', sans-serif
+				li 
+					display: inline-block
+					margin: 10px 0
+
+					a
+						color: #fff
+						text-decoration: none
+						padding: 0 10px
+						border: 1px solid transparent
+						&:hover
+							text-decoration: none
+							// background-color: #fff
+							// color: #000
+							border: 1px solid #fff
+							border-radius: 15px 
+	h1
+		font-family: 'Source Code Pro', monospace
+		margin:
+			top: 215px
+			bottom: 40px
+.About
+	height: auto
+	padding: 5% 15%
+	h2
+		font-family: 'Source Code Pro', monospace
+		margin-bottom: 45px
+	p
+		font-family: 'Open Sans', sans-serif
+		margin-bottom: 30px	
+	.About_im
+		img
+			margin-left: 10%
+	a
+		text-decoration: none
+		color: #000000
+		border: 1px solid #000000
+		border-radius: 15px
+		padding: 6px 20px
+	
+	
+	// #main
+	// 	display: none
+	// #main:target
+	// 	display: block
+	.About_text
+		// float: left // изображение обтекает текст
+		// background-color: #4ed4e0
+		// width: 50%
+		// p
+		// 	margin:
+		// 		top: 7%
+		// 		bottom: 4%
+.Featured-work
+	background-color: #f3f3f3
+	height: auto
+	padding-top: 20px	
+	h3
+		font-family: 'Source Code Pro', monospace
+		margin: 
+			top: 60px
+			bottom: 40px	
+	.Featured-work_text
+		text-align: center
+		// position: 
+		// : 
+		p
+			font-family: 'Open Sans', sans-serif
+			margin-bottom: 50px
+	.Works
+		img
+			height: 320px
+			width: 100%
+		p
+			font-family: 'Source Code Pro', monospace
+			padding-top: 45%
+			text-align: center
+			background: rgba(0,0,0,0.7)
+			color: #ffffff
+			height: 320px
+			position: absolute
+			width: 100%
+			z-index: 1
+			top: 0
+		
+.Services
+	padding: 5%
+	height: auto
+	text-align: center
+	background-color: #f3f3f3
+	.Services_text
+		margin: 0 auto
+		h3
+			font-family: 'Source Code Pro', monospace	
+			margin-bottom: 40px
+		p
+			font-family: 'Open Sans', sans-serif
+			margin-bottom: 40px	
+	.menu_copy
+		margin-left: 10%
+		ul
+			list-style:  none
+			
+			li
+				height: 50px
+				width: 50px
+				border-radius: 50%
+				background-color: #81868e
+				margin-bottom: 19px
+				transition: background-color 0.4s ease-in-out 
+				&:hover
+					background-color: #19bd9a
+				img
+					margin-top: 20%
+			
+	.menu_text	
+		text-align: left
+		width: 80%
+		margin: 0 auto
+		h5
+			font-family: 'Open Sans', sans-serif
+			margin-bottom: 35px	
+		p
+			font-family: 'Open Sans', sans-serif
+	.menu_text__roller
+		display: none
+	.menu_text__gamepad
+		display: none
+				
+	.Prog
+		progress
+			background-color: #000000	
+			height: 10px
+	
+			
+.Team
+	height: 400px
+	background-color: rgb(30,30,30)
+	background-image: url(../img/Team/Laer4.png) 
+	background-position: 50% 50%   //начальное положение фонового изображения
+	background-size: cover //масштабирует изображение под размер блока
+	.Team_group
+		// width: 40%
+		position: absolute
+		// position: relative
+		left: 60%
+		top: -10%
+		height: 328px
+		z-index: 555
+		background-image: url(../img/Team/Lar2.png) 
+		background-repeat: no-repeat	
+		background-size: contain // картинка подстраивается под размер блока	
+		.Team_group1__Bou
+			img
+				padding-left: 30%
+				margin-top: 25% 
+		.Team_group1_text
+			text-align: left
+			display: none
+			padding: 20% 10%
+			p
+				color: green
+				columns: 2
+				color: #ffffff	
+		// &:hover
+		// 	.Team_group1__Bou
+		// 		display: none
+		// 	.Team_group1__text
+		// 		display: block
+	.Team_text
+		padding: 5% 5%
+		color: #fff
+		h4
+			font-family: 'Source Code Pro', monospace
+			margin-bottom: 50px	
+		p
+			font-family: 'Open Sans', sans-serif
+
+.Portfilio
+	padding: 80px
+	height: auto
+	text-align: center
+	h4
+		font-family: 'Source Code Pro', monospace
+		margin-bottom: 40px
+	p
+		font-family: 'Open Sans', sans-serif
+	ul
+		font-family: 'Open Sans', sans-serif
+		margin: 70px auto
+		width: 100%
+		display: block
+		list-style: none
+		li
+			display: inline-block
+			margin: 0 3%
+			border-bottom: 2px solid #ffffff
+		& :hover
+			border-bottom: 2px solid #19bd9a
+	.grid_demo
+		margin: 0 auto
+		width: 85%
+		display: grid
+		grid-template-columns: repeat(4,1fr)
+		grid-gap: 10px
+		position: relative
+		z-index: 0
+		img
+			height: 250px 	//1
+			width: 100%		//1
+				/*1 - изображение по размеру блока*/
+		#So3
+			position: relative
+			z-index: 0
+		// 	.Portfilio_work__hover
+		// 		// display: none
+		// 		text-align: left
+		// 		opacity: 0.7
+		// 		background-color: #333333
+		// 		z-index: 1
+		// 		position: absolute
+		// 		top: 0
+		// 		height: 250px
+		// 		padding: 40px 30px 	
+		// 		h5
+		// 			width: 60%
+		// 			color: #19bd9a
+		// 			border-bottom: 1px solid #19bd9a
+		// 			margin-bottom: 30px
+		// 		p
+		// 			color: #ffffff
+		// 		.Icon
+		// 			margin-right: 5% 
+		// 			float: left
+		// 			background-color: #000000
+		// 			border-radius: 50%
+		// 			padding: 3%
+		// &:hover
+		// 	.Portfilio_work__hover
+		// 		display: block
+.Blog
+	position: relative
+	height: auto
+	filter: grayscale(100%)    //черно-белый фон
+	background: url(../img/Layer441.png), linear-gradient(to bottom,#000000,#2d2d2d)
+	background-size: cover //масштабирует изображение под размер блока
+	color: #ffffff
+	h4
+		padding:  
+			top: 5%
+			left: 4%
+			bottom: 4%
+		font-family: 'Source Code Pro', monospace
+	p
+		padding: 
+			left: 4%
+			bottom: 
+		font-family: 'Open Sans', sans-serif
+	a
+		width: 8%	
+	.carouselExampleControls
+		position: relative
+	.Blog_text
+		display: block
+		width: 50%
+		padding:
+			top: 50px
+			left: 100px
+			bottom: 50px 
+		color: #9b9da0
+	.Blog_more
+		color: #9b9da0
+		text-decoration: none
+		margin-left: 120px
+
+.Price
+	padding: 70px
+	color: #000000
+	height: 640px
+	background-color: #f3f3f3
+	text-align: center
+	h4
+		font-family: 'Source Code Pro', monospace
+		margin-bottom: 35px
+	p
+		font-family: 'Open Sans', sans-serif
+		margin-bottom: 45px
+		font-style: bolder
+	.Plans
+		padding: 0
+		height: 300px
+		background-color: #fff
+		box-shadow: 5px 5px 4px grey
+		margin: 0 30px
+		.Plans_text1
+			height: 65px
+			background-color: #19bd9a
+			padding: 15px
+			color: #ffffff
+			// font-weight: 600
+			p	
+				font-size: 20px
+				font-family: 'Source Code Pro', monospace
+		.Plans_text2
+			margin: 60px auto
+			& :nth-child(1)
+				color: #19bd9a
+				font-size: 28px
+				font-weight: bold
+				margin: 0
+				font-family: 'Source Code Pro', monospace
+		.Plans_text1_hover
+			height: 65px
+			background-color: #19bd9a
+			padding: 15px
+			position: absolute
+			bottom: 0
+			width: 100%
+			a
+				text-decoration: none
+				color: #ffffff
+				i
+					margin: 10px
+		.second_block
+			position: absolute
+			bottom: 0
+			top: 0
+			display: none
+			transition: display 1s ease-out 5s
+			p
+				
+				margin: 30px
+				text-align: left
+		&:hover
+			// .first_block
+			// 	display: none
+			// .second_block
+			// 	display: block
+				
+.Subscribe
+	padding: 80px
+	height: 377px
+	// background-color: #121212
+	// filter: grayscale(100%) 
+	background-image: url(../img/Subscribe.png)
+	// background-position: center
+	color: #777b83
+	text-align: center
+	h4
+		font-family: 'Source Code Pro', monospace
+		color: #ffffff
+		margin-bottom: 35px
+		
+	p
+		font-family: 'Open Sans', sans-serif
+		margin-bottom: 50px
+	form
+		input
+			border: 1px solid #000000
+	.Subscribe_mail
+		height: 41px
+		width: 350px
+		padding: 1%
+	.Subscribe_sub
+		height: 41px
+		width: 150px
+		background-color: #19bd9a
+		filter: none
+.Contact
+	padding: 60px
+	background-color: #f3f3f3
+	height: 600px
+	text-align: center
+	h4
+		font-family: 'Source Code Pro', monospace
+		margin-bottom: 40px
+	h5
+		font-family: 'Open Sans', sans-serif
+	p	
+		font-family: 'Open Sans', sans-serif
+		margin-bottom: 50px
+	.Contact_details
+		i
+			color: #ffffff
+			padding: 40px
+		.Contact_details__mail
+			padding: 0
+			margin: 0 20px
+			width: 287px
+			height: 270px
+			background-color: #fff
+			.details_mail
+				background-image: url(../img/Contact/Layer444.png)
+				height: 144px
+				background-position: center
+		.Contact_details__address
+			padding: 0
+			margin: 0 20px
+			width: 287px
+			height: 270px
+			background-color: #fff
+			.details_address
+				background-image: url(../img/Contact/Layer448.png)
+				height: 144px
+				background-position: center
+		.Contact_details__phone
+			padding: 0
+			margin: 0 20px
+			width: 287px
+			height: 270px
+			background-color: #fff
+			.details_phone
+				background-image: url(../img/Contact/Layer446.png)
+				height: 144px
+				background-position: center
+		.Contact_details_text
+			padding: 10px
+.ContactForm
+	height: 554px
+	background-color: #fff
+	text-align: center
+	form
+		width: 80%
+		margin: 65px auto
+		input
+			padding: 5px
+			width: 288px
+			margin: 15px 20px
+		#recourse
+			width: 940px
+			margin: 0 20px
+		.sub
+			height: 50px
+			width: 940px
+			background-color: #19bd9a
+footer
+	height: 100px		
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin: 70px auto
+	font-family: 'Open Sans', sans-serif
+	img
+		margin-bottom: 20px
+	.social_network
+		margin: 35px 5px
+		display: block
+		float: left
+		background-color: #3b5998
+		border-radius: 50%
+		width: 28px
+		height: 28px
+		color: #ffffff
+.upHome
+	position: fixed
+	display: block
+	bottom: 4%
+	right: 2%
+	z-index: 999
+	&:hover
+		color: #d8ff00
+#more
+	display: none
+	margin: auto
+	position: absolute
+	top: 10.1%
+	right: 0
+	// bottom: 0 
+	left: 0
+	z-index: 10
+	height: auto
+	width: 90%	
+	padding: 2%
+	padding-bottom: 0
+	text-align: center
+	background-color: #f3f3f3
+	border: 8px ridge #767777
+	border-radius: 20px
+	h2
+		font-family: 'Source Code Pro', monospace
+	hr
+		width: 80%
+	p
+		margin: 20px
+		text-align: justify
+		font-family: 'Open Sans', sans-serif
+	a
+		position: relative
+		top: -30px
+		text-decoration: none
+		border: none
+
+
+
+/* MY CODE*/
+
+
+
+
+
+@import "media" // Always at the end

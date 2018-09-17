@@ -1,0 +1,95 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.Team .Team_group .Team_group1_text
+		padding: 10% 5%
+	.Team .Team_group .Team_group1__Bou img
+		padding-left: 30%
+	.Portfilio
+		padding: 40px
+	.Portfilio ul
+		margin: 30px auto
+	.Price .Plans
+	.ContactForm form input
+		margin: 15px 15px
+	footer
+		margin: 40px auto
+	footer .social_network
+		margin: 20px 5px
+			
+// ≥992px
++media-breakpoint-down(md)
+	.Team .Team_group .Team_group1_text
+		font-size: 14px
+		padding: 10% 2% 0 2%
+	.Team .Team_text
+		padding: 5% 0 0 7%
+	.Team .Team_group .Team_group1__Bou img
+		padding-left: 25%
+	.Portfilio .grid_demo
+		grid-template-columns: repeat(3,1fr)
+	.Blog .Blog_text
+		width: 80%
+	.Price .Plans
+		margin: 0 15px
+	.Contact
+		padding: 30px
+		height: auto
+	.Contact .Contact_details .Contact_details__mail
+		margin: 15px 10px
+	.Contact .Contact_details .Contact_details__address
+		margin: 15px 10px
+	.Contact .Contact_details .Contact_details__phone
+		margin: 15px 10px
+	.ContactForm
+		height: auto
+	.ContactForm form input
+		margin: 15px 13px
+	.ContactForm form
+		margin: 30px auto
+
+// ≥768px
++media-breakpoint-down(sm)
+	.About
+		height: auto
+		.About_im 
+			text-align: center
+			margin: 5% 40% 0 3%
+	.Team .Team_group .Team_group1__Bou img
+		padding-left: 20%
+	.Portfilio .grid_demo
+		grid-template-columns: repeat(2,1fr)
+	.Price
+		padding: 30px
+	.Subscribe .Subscribe_sub
+		margin-top: 10px
+	.Contact
+		padding: 30px
+		height: auto
+	.Contact_details__mail
+		margin: 
+	.ContactForm form input
+		margin: 15px 10px
+
+// ≥576px
++media-breakpoint-down(xs)
+	// .Team .Team_group
+	// 	display: none
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
